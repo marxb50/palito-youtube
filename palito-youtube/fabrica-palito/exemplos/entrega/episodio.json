@@ -1,0 +1,50 @@
+{
+  "versao": 1,
+  "titulo": "Quando o recibo muda de mão?",
+  "duracao_s": 6,
+  "exposicao": 2,
+  "planos": [
+    {
+      "id": "a-pergunta",
+      "mundo": "creme",
+      "fala": "Quando o recibo muda de mão?",
+      "elementos": [
+        {"id": "guia", "tipo": "ator", "papel": "guia", "pos": [355, 608, 2.5], "gestos": [[0, "pensar"], [0.48, "indicar"]]},
+        {"id": "recibo", "tipo": "boleto", "rotulo": "RECIBO", "pos": [[0, 668, 382, 2], [1, 652, 339, 2.4]], "angulo": [-9]}
+      ]
+    },
+    {
+      "id": "uma-mao-depois-da-outra",
+      "mundo": "kraft",
+      "entrada": "folha",
+      "fala": "O frentista estende o papel. O cliente pega, e só então o frentista solta.",
+      "camera": [[0, 480, 270, 1], [1, 489, 272, 1.10]],
+      "elementos": [
+        {"id": "posto", "tipo": "posto", "rotulo": "verde", "pos": [208, 390, 0.85]},
+        {"id": "carro", "tipo": "sedan", "pos": [750, 414, 0.76]},
+        {
+          "id": "motorista",
+          "tipo": "elenco",
+          "papel": "39_shopper",
+          "pos": [414, 464, 1.5],
+          "gestos": [[0, "repouso"], [0.36, "receber"], [0.74, "pensar"]],
+          "toques": [{"de": 0.49, "ate": 1, "em": "recibo", "mao": "dir", "offset": [-14, -27]}]
+        },
+        {
+          "id": "frentista",
+          "tipo": "elenco",
+          "papel": 7,
+          "frente": -1,
+          "colete": true,
+          "pos": [614, 464, 1.5],
+          "gestos": [[0, "repouso"], [0.21, "receber"], [0.59, "repouso"]],
+          "toques": [{"de": 0, "ate": 0.54, "em": "recibo", "mao": "dir", "offset": [14, -33]}]
+        },
+        {
+          "id": "recibo", "tipo": "boleto", "rotulo": "RECIBO", "valor": [1],
+          "pos": [[0, 566, 396, 0.86], [0.24, 566, 396, 0.86], [0.49, 515, 349, 0.86], [0.56, 515, 349, 0.86], [0.85, 478, 337, 0.86]]
+        }
+      ]
+    }
+  ]
+}
